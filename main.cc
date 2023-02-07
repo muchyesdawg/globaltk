@@ -32,6 +32,8 @@ int main( void ){
         //cout<<s.empty()<<"\n\nit shouldve printed honestly\n\n";
     }
     */
+    Image img;
+    img.loadFromFile("./1.png");
     cout<<"it got here";
     return 0;
 }
