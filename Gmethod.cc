@@ -62,11 +62,24 @@ string methods::readFFile(){
     return s;
 }
 methods::methods(string s){ methodf.open(s); }
-void methods::genString(){
+void methods::genString(int iter, int seed){
     example();
+    cout<<enc<<endl;
+    srand(seed);
     char*t=new char[enc.length()+1];
-    
+    //got to lazy to read docs 
     for (int i = 0; i < enc.length(); i++) {
-        
+        t[i]=enc.at(i);
     }
+    cout<<t<<endl;
+    for (int i = 0; i < iter; i++) {
+        int t1 = rand()%enc.length(),t2=rand()%enc.length();
+        char td = t[t1];
+        t[t1]=t[t2];
+        t[t2]=td;
+    }
+    cout<<t;
+    
+    enc = t;
+    
 }

@@ -23,6 +23,7 @@ class methods{
     string readFFile();
     string sResult, enc;
     methods(string s);
-    void genString();
+    void genString(int iter, int seed);
+    void swap();
     private:
 };

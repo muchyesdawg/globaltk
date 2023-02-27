@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include "Gmethod.hpp"
+//driver code for testing
 
 #include <cstring>
 using namespace std;
@@ -32,8 +33,8 @@ int main( void ){
         //cout<<s.empty()<<"\n\nit shouldve printed honestly\n\n";
     }
     */
-    Image img;
-    img.loadFromFile("./1.png");
-    cout<<"it got here";
+    m.genString(123, 489756289);
+    cout<<"\n\n"<<m.enc;
+    cout<<"\n\nit got here";
     return 0;
 }
