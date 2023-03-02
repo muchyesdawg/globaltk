@@ -61,7 +61,7 @@ string methods::readFFile(){
     sResult = s;
     return s;
 }
-methods::methods(string s){ methodf.open(s); }
+void methods::load(string s){ methodf.open(s); }
 void methods::genString(int iter, int seed){
     example();
     cout<<enc<<endl;

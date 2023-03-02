@@ -22,8 +22,8 @@ class methods{
     string dectohex(int s);
     string readFFile();
     string sResult, enc;
-    methods(string s);
     void genString(int iter, int seed);
     void swap();
+    void load(string s);
     private:
 };
