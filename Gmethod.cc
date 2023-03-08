@@ -35,10 +35,12 @@ string methods::dectohex(int i){
         i           = (i-t)/16;     //currently d is equal to the quotient of d/16
         s           .insert(0,1,HEXTable.at(t));
     }
-    
+    while(s.length()<2){
+        s.insert(0,"0");
+    }
     return          s;
 }
-void methods::example(){ enc ="qiwoeprtyuahsjdkflgZVBXNCMQEWRYTUIPOAFSGDHJLKzmxncbv1234567890 ./"; }
+void methods::example(){ enc ="qiw\"oeprtyuahsjdkflgZVBXNCMQEWRYTUIPOAFSGDHJLKzmxncbv1234567890 ./"; }
 string methods::readFFile(){
     string s = "";
     const char *e=enc.c_str();
@@ -56,7 +58,6 @@ string methods::readFFile(){
         else if(i>=enc.length())break;
         //std::cout<<"\nindex : "<<hextodec(s)<<"\ncharacter : "<<e[i]<<endl;
         s.append(1,e[i]);
-        cout<<"looped";
     }
     sResult = s;
     return s;
@@ -82,4 +83,16 @@ void methods::genString(int iter, int seed){
     
     enc = t;
     
+}
+string methods::strToHex(string str){
+    string s="";
+    for(int di = 0; di<str.length();di++)
+    for(int i = 0; i < enc.length();i++){
+        if(str.at(di)==enc.at(i)){
+            s.append(dectohex(i));
+            s.append(" ");
+        }
+    }
+    s.append("ff");
+    return s;
 }

@@ -17,6 +17,7 @@ class methods{
     void example();
     ifstream methodf;
     string result;
+    string strToHex(string str);
     double hextodec(string s); 
     string dectohex(double s);
     string dectohex(int s);
