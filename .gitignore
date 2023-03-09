@@ -3,3 +3,5 @@ makefile
 bin/e
 funny.txt
 a.out
+enc
+main.cc
