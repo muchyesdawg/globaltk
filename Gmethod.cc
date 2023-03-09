@@ -90,6 +90,6 @@ string methods::strToHex(string str){
             s.append(" ");
         }
     }
-    s.append("ff");
+    s.append("ff ");
     return s;
 }
