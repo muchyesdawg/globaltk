@@ -1,13 +1,19 @@
 #include "Gmethod.hpp"
-#include <time.h>
-#include <stdlib.h>
-int main(){
-    srand(time(0));
+int main(void){
     methods m;
     m.example();
-    int a=rand(),b=rand(),c=rand()%25672;
-    cout<<m.strToHex(to_string((a/c)%1))<<endl<<m.strToHex(to_string(b/c))<<endl;
-    m.genString(a,b);
-    cout<<m.strToHex("earth.png")<<endl;
+    m.load("./file.txt");
+    {
+    string a = m.readFFile(),b;
+    cout<<a<<endl;
+    b=m.readFFile();
+    cout<<b<<endl;
+    m.genString(stoi(a), stoi(b));
+    }
+    string t;
+    while(t!="EOF"){
+        t=m.readFFile();
+        cout<<t<<endl;
+    }
     return 0;
 }
