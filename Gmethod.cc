@@ -47,7 +47,7 @@ string methods::dectohex(int i){
     }
     return          s;
 }
-void methods::example(){ enc ="qiw\"oeprtyuahsjdkflgZVBXNCMQEWRYTUIPO-AFSGDHJLKzmxncbv1234567890 ./"; }
+void methods::example(){ enc ="qiw\"oeprtyuahsjdkflgZVBXNCM_QEWRYTUIPO-AFSGDHJLKzmxncbv1234567890 ./"; }
 string methods::readFFile(){
     string s = "";
     const char *e=enc.c_str();
