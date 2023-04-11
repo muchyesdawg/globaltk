@@ -7,6 +7,7 @@
 #include <map>
 #include <string>
 #include <fstream>
+#include <time.h>
 #include <vector>
 #include <math.h>
 using namespace std;
@@ -26,5 +27,6 @@ class methods{
     void genString(int iter, int seed);
     void swap();
     void load(string s);
+    void random();
     private:
 };

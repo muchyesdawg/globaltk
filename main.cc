@@ -10,6 +10,7 @@ int main(void){
     cout<<b<<endl;
     m.genString(stoi(a), stoi(b));
     }
+    cout<<m.dectohex(12)<<endl;
     string t;
     while(t!="EOF"){
         t=m.readFFile();

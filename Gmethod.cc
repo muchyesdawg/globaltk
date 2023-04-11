@@ -15,7 +15,14 @@ double methods::hextodec(string s){
     }
     return r;
 }
- 
+void methods::random(){
+    srand(time(0));
+    int a = rand()%120;
+    int b = rand()%120;
+    cout<<dectohex(a)<<endl;
+    cout<<dectohex(b)<<endl;
+    genString(a, b);
+}
 string methods::dectohex(double f){ 
     string s        = "";
     int d           = int(f);
@@ -40,7 +47,7 @@ string methods::dectohex(int i){
     }
     return          s;
 }
-void methods::example(){ enc ="qiw\"oeprtyuahsjdkflgZVBXNCMQEWRYTUIPOAFSGDHJLKzmxncbv1234567890 ./"; }
+void methods::example(){ enc ="qiw\"oeprtyuahsjdkflgZVBXNCMQEWRYTUIPO-AFSGDHJLKzmxncbv1234567890 ./"; }
 string methods::readFFile(){
     string s = "";
     const char *e=enc.c_str();
@@ -79,7 +86,7 @@ void methods::genString(int iter, int seed){
     }
     
     enc = t;
-    
+    srand(time(0));
 }
 string methods::strToHex(string str){
     string s="";
