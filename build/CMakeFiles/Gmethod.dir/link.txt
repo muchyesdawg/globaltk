@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGmethod.a CMakeFiles/Gmethod.dir/Gmethod.cc.o
+/usr/bin/ranlib libGmethod.a

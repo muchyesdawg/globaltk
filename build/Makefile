@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GMethod
+# Target rules for targets named Gmethod
 
 # Build rule for target.
-GMethod: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GMethod
-.PHONY : GMethod
+Gmethod: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gmethod
+.PHONY : Gmethod
 
 # fast build rule for target.
-GMethod/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GMethod.dir/build.make CMakeFiles/GMethod.dir/build
-.PHONY : GMethod/fast
+Gmethod/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gmethod.dir/build.make CMakeFiles/Gmethod.dir/build
+.PHONY : Gmethod/fast
 
 Gmethod.o: Gmethod.cc.o
 .PHONY : Gmethod.o
 
 # target to build an object file
 Gmethod.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GMethod.dir/build.make CMakeFiles/GMethod.dir/Gmethod.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gmethod.dir/build.make CMakeFiles/Gmethod.dir/Gmethod.cc.o
 .PHONY : Gmethod.cc.o
 
 Gmethod.i: Gmethod.cc.i
@@ -142,7 +142,7 @@ Gmethod.i: Gmethod.cc.i
 
 # target to preprocess a source file
 Gmethod.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GMethod.dir/build.make CMakeFiles/GMethod.dir/Gmethod.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gmethod.dir/build.make CMakeFiles/Gmethod.dir/Gmethod.cc.i
 .PHONY : Gmethod.cc.i
 
 Gmethod.s: Gmethod.cc.s
@@ -150,7 +150,7 @@ Gmethod.s: Gmethod.cc.s
 
 # target to generate assembly for a file
 Gmethod.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GMethod.dir/build.make CMakeFiles/GMethod.dir/Gmethod.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gmethod.dir/build.make CMakeFiles/Gmethod.dir/Gmethod.cc.s
 .PHONY : Gmethod.cc.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GMethod"
+	@echo "... Gmethod"
 	@echo "... Gmethod.o"
 	@echo "... Gmethod.i"
 	@echo "... Gmethod.s"

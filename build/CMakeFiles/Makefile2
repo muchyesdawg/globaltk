@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/makus/code/globaltk/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/GMethod.dir/all
+all: CMakeFiles/Gmethod.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/GMethod.dir/clean
+clean: CMakeFiles/Gmethod.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/GMethod.dir
+# Target rules for target CMakeFiles/Gmethod.dir
 
 # All Build rule for target.
-CMakeFiles/GMethod.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GMethod.dir/build.make CMakeFiles/GMethod.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GMethod.dir/build.make CMakeFiles/GMethod.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/makus/code/globaltk/build/CMakeFiles --progress-num=1,2 "Built target GMethod"
-.PHONY : CMakeFiles/GMethod.dir/all
+CMakeFiles/Gmethod.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gmethod.dir/build.make CMakeFiles/Gmethod.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gmethod.dir/build.make CMakeFiles/Gmethod.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/makus/code/globaltk/build/CMakeFiles --progress-num=1,2 "Built target Gmethod"
+.PHONY : CMakeFiles/Gmethod.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/GMethod.dir/rule: cmake_check_build_system
+CMakeFiles/Gmethod.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/makus/code/globaltk/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GMethod.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Gmethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/makus/code/globaltk/build/CMakeFiles 0
-.PHONY : CMakeFiles/GMethod.dir/rule
+.PHONY : CMakeFiles/Gmethod.dir/rule
 
 # Convenience name for target.
-GMethod: CMakeFiles/GMethod.dir/rule
-.PHONY : GMethod
+Gmethod: CMakeFiles/Gmethod.dir/rule
+.PHONY : Gmethod
 
 # clean rule for target.
-CMakeFiles/GMethod.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GMethod.dir/build.make CMakeFiles/GMethod.dir/clean
-.PHONY : CMakeFiles/GMethod.dir/clean
+CMakeFiles/Gmethod.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gmethod.dir/build.make CMakeFiles/Gmethod.dir/clean
+.PHONY : CMakeFiles/Gmethod.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

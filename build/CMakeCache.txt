@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=GMethod
+CMAKE_PROJECT_NAME:STATIC=Gmethod
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -223,6 +223,15 @@ GMethod_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 GMethod_SOURCE_DIR:STATIC=/home/makus/code/globaltk/src
+
+//Value Computed by CMake
+Gmethod_BINARY_DIR:STATIC=/home/makus/code/globaltk/build
+
+//Value Computed by CMake
+Gmethod_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Gmethod_SOURCE_DIR:STATIC=/home/makus/code/globaltk/src
 
 
 ########################
