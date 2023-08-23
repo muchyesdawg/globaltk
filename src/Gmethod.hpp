@@ -14,7 +14,7 @@ using namespace std;
 const string HEXTable ="0123456789abcdef";
 class methods{
     public:
-    void example();
+    void def ();
     ifstream methodf;
     string result;
     string strToHex(string str);
@@ -26,5 +26,6 @@ class methods{
     void genString(int iter, int seed);
     void swap();
     void load(string s);
+    methods();
     private:
 };

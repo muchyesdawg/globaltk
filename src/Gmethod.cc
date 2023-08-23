@@ -16,6 +16,7 @@ double methods::hextodec(string s){
     return r;
 }
  
+methods::methods(){}
 string methods::dectohex(double f){ 
     string s        = "";
     int d           = int(f);
@@ -40,7 +41,7 @@ string methods::dectohex(int i){
     }
     return          s;
 }
-void methods::example(){ enc ="qiw\"oeprtyuahsjdkflgZVBXNCMQEWRYTUIPOAFSGDHJLKzmxncbv1234567890 ./"; }
+void methods::def(){ enc ="qiw\"oeprtyuahsjdkflgZVBXNCMQEWRYTUIPOAFSGDHJLKzmxncbv1234567890 ./"; }
 string methods::readFFile(){
     string s = "";
     const char *e=enc.c_str();
@@ -64,7 +65,7 @@ string methods::readFFile(){
 }
 void methods::load(string s){ methodf.open(s); }
 void methods::genString(int iter, int seed){
-    example();
+    def();
     srand(seed);
     char*t=new char[enc.length()+1];
     //got to lazy to read docs 
