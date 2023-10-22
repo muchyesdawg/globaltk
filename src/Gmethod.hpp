@@ -29,3 +29,8 @@ class methods{
     methods();
     private:
 };
+namespace bits{
+    int flipb(int* i, int p);
+    int setb(int* i, bool bit, int p);
+    int getb(int i, int p);
+}

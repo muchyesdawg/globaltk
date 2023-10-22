@@ -94,3 +94,12 @@ string methods::strToHex(string str){
     s.append("ff");
     return s;
 }
+int bits::flipb(int *i, int p){ if(i==nullptr)return 1;*i ^=1<<p; return 0;}
+int bits::getb(int i, int p){return (i>>p)&1;}
+int bits::setb(int *i, bool bit, int p){
+    if(i==nullptr)return 1;
+    if(bit) *i |= (1<<p); 
+    else if(*i>>p==0) return 0;
+    else *i ^= (1<<p);
+    return 0;
+}
