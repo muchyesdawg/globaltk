@@ -4,3 +4,15 @@ comp.sh
 1.png
 bin/e
 funny.txt
+*.make
+*.cmake
+*.internal
+*.ts
+build/CMakeFiles/GMethod.dir/build.make
+build/CMakeFiles/GMethod.dir/cmake_clean.cmake
+build/CMakeFiles/GMethod.dir/cmake_clean_target.cmake
+build/CMakeFiles/GMethod.dir/compiler_depend.internal
+build/CMakeFiles/GMethod.dir/compiler_depend.make
+build/CMakeFiles/GMethod.dir/compiler_depend.ts
+build/CMakeFiles/GMethod.dir/depend.make
+build/CMakeFiles/GMethod.dir/DependInfo.cmake
