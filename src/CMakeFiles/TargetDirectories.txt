@@ -1,3 +1,0 @@
-/home/makus/code/globaltk/src/CMakeFiles/GMethod.dir
-/home/makus/code/globaltk/src/CMakeFiles/edit_cache.dir
-/home/makus/code/globaltk/src/CMakeFiles/rebuild_cache.dir

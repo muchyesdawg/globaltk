@@ -1,0 +1,38 @@
+#include "bintree.h"
+using namespace MDataTypes;
+//define extern vars
+binTree::node *binTree::t;
+quadTree::node *quadTree::t;
+
+binTree::node& binHead::operator[] (unsigned int num){
+    //TODO: implement binhead operator thing
+    {    
+        unsigned int count = sizeof(num) * 8 - 1;
+        unsigned int reverse_num = num;
+     
+        num >>= 1;
+        while (num) {
+            reverse_num <<= 1;
+            reverse_num |= num & 1;
+            num >>= 1;
+            count--;
+        }
+        reverse_num <<= count;
+        num = reverse_num;
+    }
+    binTree::t = h;
+    while(num != 0 && binTree::t != std::nullptr_t){
+        if((num&1)==0){
+            binTree::t = (binTree::t == std::nullptr_t ? nullptr_t: binTree::t->l);
+        }else{
+            binTree::t = (binTree::t == nullptr_t ? nullptr_t: binTree::t->r);
+        }
+        num = num >>1;
+    }
+    return *binTree::t;
+}
+void binTree::node::operator =(binTree::node *x){
+    l = x->l;
+    r = x->r;
+    data = x->data;
+}
